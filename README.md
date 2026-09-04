@@ -49,6 +49,30 @@
 
 ---
 
+## 📂 Estructura de Páginas
+
+El proyecto cuenta con 3 páginas completas e interconectadas:
+
+1. **`index.html` (Inicio & Experiencia Recreo):**
+   - Presentación de la marca y legado culinario.
+   - Selector interactivo de antojos en tiempo real.
+   - Platos estrella y tabs de la experiencia campestre (áreas verdes, música, estacionamiento).
+   - Sección de reservas de mesa y cotizador rápido de chancho entero.
+
+2. **`carta.html` (Nuestra Carta Digital Interactiva):**
+   - Filtros dinámicos por categorías culinarias.
+   - Selectores de peso / porción (1/4 kg, 1/2 kg, 1 kg) y cremas tradicionales.
+   - Carrito sticky lateral con cálculo de empaque y opción "En Mesa" vs "Delivery".
+   - Despacho automático de la comanda con detalle a WhatsApp.
+
+3. **`eventos.html` (Cotizador de Encargos & Eventos):**
+   - Simulador interactivo de banquetes y celebraciones (cumpleaños, bodas, corporativos).
+   - Slider de invitados (10 a 250+ comensales) y recomendaciones inteligentes.
+   - Controles `+` / `−` de piezas enteras de carne (lechón, cordero al palo).
+   - Opcional de Maestro Brasero en vivo y resumen presupuestario exportable a WhatsApp.
+
+---
+
 ## 🚀 Cómo Ejecutar el Proyecto Localmente
 
 1. Clona este repositorio:
@@ -59,11 +83,12 @@
    ```bash
    cd SaboresAndinosMistura
    ```
-3. Abre el archivo `index.html` en cualquier navegador moderno:
-   - En Windows: Doble clic en `index.html` o ejecuta en terminal:
+3. Abre cualquiera de las páginas en tu navegador favorito:
+   - En Windows (PowerShell):
      ```powershell
      start index.html
      ```
+   - También puedes navegar directamente a `carta.html` o `eventos.html`.
 
 ---
 
