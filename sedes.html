@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Sabores Andinos Mistura · Nuestras Sedes Campestres</title>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  <style>@layer base { html, body { margin: 0; padding: 0; } body { overscroll-behavior: none; } main > :first-child { margin-top: 0 !important; } } ::-webkit-scrollbar { display: none; }</style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#565558", "on-surface": "#1c1c18", "outline": "#8e6f76", "on-background": "#1c1c18", "on-tertiary-fixed": "#1b1b1e", "primary-container": "#d6006e", "primary-fixed-dim": "#ffb1c6", "surface-dim": "#dddad4", "on-surface-variant": "#5a3f46", "inverse-surface": "#31302d", "surface-container": "#f1ede7", "surface-bright": "#fdf9f3", "on-primary-fixed": "#3f001c", "on-secondary-fixed-variant": "#4f4800", "error-container": "#ffdad6", "surface-container-highest": "#e6e2dc", "on-primary": "#ffffff", "on-tertiary-container": "#f3f0f4", "secondary-container": "#f6e200", "secondary": "#686000", "surface-tint": "#ba005f", "on-secondary": "#ffffff", "secondary-fixed-dim": "#dac900", "on-error-container": "#93000a", "on-primary-fixed-variant": "#8e0047", "tertiary-fixed-dim": "#c8c5ca", "surface-container-lowest": "#ffffff", "tertiary-container": "#6e6d71", "surface": "#fdf9f3", "primary-fixed": "#ffd9e1", "on-tertiary-fixed-variant": "#47464a", "background": "#fdf9f3", "on-error": "#ffffff", "on-secondary-container": "#6d6400", "error": "#ba1a1a", "surface-variant": "#e6e2dc", "on-primary-container": "#ffedef", "primary": "#a90056", "tertiary-fixed": "#e4e1e6", "on-tertiary": "#ffffff", "surface-container-high": "#ebe8e2", "inverse-on-surface": "#f4f0ea", "inverse-primary": "#ffb1c6", "on-secondary-fixed": "#1f1c00", "secondary-fixed": "#f9e500", "surface-container-low": "#f7f3ed", "outline-variant": "#e2bdc5" }, "spacing": { "spacing-xl": "2rem", "gutter-desktop": "1.5rem", "spacing-2xs": "0.25rem", "spacing-lg": "1.5rem", "spacing-xs": "0.5rem", "spacing-2xl": "3rem", "spacing-md": "1rem", "spacing-sm": "0.75rem", "spacing-3xl": "4rem", "gutter-mobile": "1rem", "container-max": "1200px" }, "fontFamily": { "headline-md": [ "Outfit" ], "body-sm": [ "Plus Jakarta Sans" ], "label-lg": [ "Plus Jakarta Sans" ], "label-sm": [ "Plus Jakarta Sans" ], "label-md": [ "Plus Jakarta Sans" ], "headline-sm": [ "Outfit" ], "display-hero": [ "Outfit" ], "body-lg": [ "Plus Jakarta Sans" ], "body-md": [ "Plus Jakarta Sans" ], "headline-lg": [ "Outfit" ] } } } };</script>
+</head>
+<body class="bg-background font-body-md text-on-surface">
+  <header class="fixed top-0 left-0 w-full z-50">
+  <div class="bg-primary-container text-on-primary py-spacing-2xs px-gutter-mobile md:px-gutter-desktop">
+    <div class="max-w-container-max mx-auto flex items-center justify-between font-label-sm text-label-sm">
+      <div class="flex items-center gap-spacing-xs">
+        <span class="material-symbols-outlined text-[16px]">outdoor_grill</span>
+        <span>¡Fogón Activo desde las 10:00 AM! Horno de barro y chancho al palo listos todos los días.</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-spacing-md">
+        <span class="flex items-center gap-spacing-2xs"><span class="material-symbols-outlined text-[16px]">location_on</span> <span id="topbar-active-sede">Valle de Chumbao & Pacucha</span></span>
+        <span class="bg-secondary-container text-on-secondary-container px-spacing-xs py-spacing-3xs rounded-full font-label-sm text-label-sm">Delivery Express Andahuaylas</span>
+      </div>
+    </div>
+  </div>
+  <div class="h-20 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] px-gutter-mobile md:px-gutter-desktop">
+    <div class="max-w-container-max mx-auto h-full flex items-center justify-between gap-spacing-md">
+      <!-- Brand Logo -->
+      <a class="flex items-center gap-spacing-sm shrink-0" data-path="inicio" href="index.html">
+        <div class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-headline-md text-headline-md shadow-[0_4px_14px_-2px_rgba(214,0,110,0.2)]">M</div>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-headline-sm text-primary leading-none tracking-tight">SABORES ANDINOS</span>
+          <span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Recreo Campestre · Mistura</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden xl:flex items-center gap-spacing-md font-label-lg text-label-lg">
+        <a class="text-on-surface-variant hover:text-on-surface px-spacing-sm py-spacing-xs transition-colors" data-path="inicio" href="index.html">Inicio</a><a class="text-on-surface-variant hover:text-on-surface px-spacing-sm py-spacing-xs transition-colors" data-path="carta" href="carta.html">Nuestra Carta Digital</a><a class="text-on-surface-variant hover:text-on-surface px-spacing-sm py-spacing-xs transition-colors" data-path="experiencia" href="experiencia.html">Experiencia Recreo & Eventos</a><a class="text-on-surface-variant hover:text-on-surface px-spacing-sm py-spacing-xs transition-colors" data-path="eventos" href="eventos.html">Pedidos & Encargos</a><a aria-current="page" class="transition-colors bg-primary-container text-on-primary font-bold rounded-full px-spacing-sm py-spacing-xs" data-path="sedes" href="sedes.html">Nuestras Sedes</a>
+      </nav>
+
+      <!-- Actions & Selectors -->
+      <div class="flex items-center gap-spacing-xs shrink-0">
+        <!-- Interactive Sede Selector -->
+        <div class="hidden lg:flex items-center gap-spacing-2xs bg-surface-container-low px-spacing-sm py-spacing-xs rounded-full text-on-surface-variant font-label-sm text-label-sm border border-outline-variant/30">
+          <span class="material-symbols-outlined text-[18px] text-primary">pin_drop</span>
+          <span class="font-bold text-on-surface">Sede:</span>
+          <select class="navbar-sede-select bg-transparent text-on-surface font-label-sm text-label-sm focus:outline-none cursor-pointer font-bold">
+            <option value="Andahuaylas Matriz">Andahuaylas Matriz</option>
+            <option value="Pacucha Laguna">Pacucha Laguna</option>
+            <option value="Abancay Campestre">Abancay Campestre</option>
+            <option value="Chincheros">Chincheros</option>
+            <option value="Ayacucho Valle">Ayacucho Valle</option>
+          </select>
+        </div>
+
+        <!-- Reservar Mesa Button (Modal Trigger) -->
+        <button type="button" data-action="reservar-mesa" class="hidden md:inline-flex items-center justify-center px-spacing-md py-spacing-xs rounded-full font-label-md text-label-md text-on-surface bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer">
+          Reservar Mesa
+        </button>
+
+        <!-- Pedir Delivery Button -->
+        <a class="inline-flex items-center gap-spacing-xs px-spacing-md py-spacing-xs rounded-full font-label-md text-label-md text-on-secondary-container bg-secondary-container hover:bg-secondary-fixed transition-transform active:scale-95 shadow-[0_4px_14px_-2px_rgba(214,0,110,0.12)] cursor-pointer" href="carta.html?mode=delivery">
+          <span class="material-symbols-outlined text-[18px]">moped</span>
+          <span class="hidden sm:inline">Pedir Delivery</span>
+        </a>
+
+        <!-- Avatar / Perfil Modal Trigger -->
+        <button type="button" data-action="open-profile" title="Ver mi Perfil y Puntos Mistura" class="rounded-full focus:outline-none hover:ring-2 hover:ring-primary transition-all ml-spacing-xs cursor-pointer">
+          <img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1V2ofqFlDHm4Hhos4vwiBVqOjkeuRF1UwANTzhgZMcEB4evY_NvPSJtYImBNOJBh2363oDlxV8x_jTarE7HOyIYUIXfgoU14X0qPwr1JQce3Sk1oithwr7n8uDk9bJzRUIkZ5nnn8LCkYO2zB4QcuVfcOaC-70XNWCnQEyWsIPiAnf13UE9Dfa5i5qi04uNdNcZfwLNJUuSpahoSYGAd7sq4O4QSyyOCyFBkTaWCK_jcaYlPM3_H9ZcxItDDQjWoyrAOMFXuRRqdg"/>
+        </button>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button type="button" id="mobile-menu-toggle-btn" class="xl:hidden p-2 text-on-surface hover:text-primary transition-colors flex items-center justify-center rounded-xl bg-surface-container-low" aria-label="Abrir Menú">
+          <span class="material-symbols-outlined text-[24px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main class="w-full pt-28 bg-background">
+    <!-- Hero Sedes -->
+    <section class="relative bg-surface-container-low py-14 px-gutter-mobile md:px-gutter-desktop border-b border-surface-container-high overflow-hidden">
+      <div class="max-w-container-max mx-auto relative z-10">
+        <div class="max-w-3xl space-y-4">
+          <div class="inline-flex items-center gap-2 bg-primary-fixed px-3 py-1.5 rounded-full text-on-primary-fixed font-label-md text-label-md">
+            <span class="material-symbols-outlined text-[18px]">pin_drop</span> 5 Sedes Campestres en Apurímac y Ayacucho
+          </div>
+          <h1 class="font-display-hero text-4xl sm:text-5xl font-extrabold text-on-surface tracking-tight">
+            Nuestras <span class="text-primary underline decoration-secondary-container decoration-wavy">Sedes Campestres</span>
+          </h1>
+          <p class="font-body-lg text-body-lg text-on-surface-variant">
+            Descubre nuestras sedes en Andahuaylas, la Laguna de Pacucha, el valle de Pachachaca en Abancay, el mirador de Chincheros y Conchopata en Ayacucho.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listado de Sedes -->
+    <section class="py-16 px-gutter-mobile md:px-gutter-desktop">
+      <div class="max-w-container-max mx-auto space-y-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          
+          <!-- Sede 1: Andahuaylas Matriz -->
+          <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="relative h-52 overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA56lZc75aIkdguocEXsBh9KdxcBAHfYZR4jfRgfqVNJdO0J8YkRU0KZ90gUzabPSmm8JcqzIdSIggBKaQIYPQyjZ9h1lvPKAWnmGZcsUDnyzdvG1KFPRTYcpW2PzQI-gfoPorfPAX2Ll1oPpF4ge4dpZoj4x26zpaYsuJ-HHnIKkgYSYH1iRANwCtl70Cj4-eoU93f0l0apT4xoa8GQoxfjPNpmJNOrlOvZ5aBKHr0Rimy5u0zZSRF" alt="Sede Andahuaylas Matriz"/>
+                <div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm font-bold shadow-md">Sede Matriz</div>
+              </div>
+              <div class="p-6 space-y-4">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Andahuaylas Matriz</h3>
+                  <p class="font-label-sm text-label-sm text-secondary font-bold">Barrio Mollepata · Valle de Chumbao</p>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">La sede emblemática donde nació nuestra tradición. Gran fogón central con 12 espadas al palo simultáneas y amplios salones rústicos.</p>
+                <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high pt-3">
+                  <div class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">location_on</span><span>Jr. Los Nogales s/n, Mollepata</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span>+51 983 456 789</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">schedule</span><span>Lun - Dom 09:30 AM - 06:30 PM</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">groups</span><span>Aforo: 350 comensales</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-2">
+              <button onclick="setActiveSede('Andahuaylas Matriz', true)" class="w-full py-2.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary font-bold font-label-md text-label-md transition-colors">
+                Elegir como Mi Sede
+              </button>
+              <a href="https://maps.google.com/?q=Mollepata,Andahuaylas" target="_blank" class="w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center block transition-colors">
+                Ver en Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Sede 2: Pacucha Laguna -->
+          <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="relative h-52 overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDPA6hNAqGoBgLS_joEWlb9GPL0QKte3CstV_eqdh5SDf03KeUN3yBnWsg6DclbZgKboXdnHRUWneNEerVQ2q4gAg5OOErGQtWt5ARP80BUiqy4Smq4OPEZOqQkhgXOpWr4BPIWjk37sFnmhDwdjF6jWSBfjGzsDtIh9Ik0icVJPaNiBfJjUA8bA8BhTg5dfQFQ9Ejc4i4CNTh5CV9f3sHKCorchRW2K2tlz125jodkWM5LCP9L82n" alt="Sede Pacucha Laguna"/>
+                <div class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded-full font-label-sm text-label-sm font-bold shadow-md">Frente a la Laguna</div>
+              </div>
+              <div class="p-6 space-y-4">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Pacucha Laguna</h3>
+                  <p class="font-label-sm text-label-sm text-secondary font-bold">Ribera Turística de Pacucha</p>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Ubicado en la orilla de la mágica Laguna de Pacucha. Especialidad en truchas vivas de criadero propio y carnes doradas al aire libre.</p>
+                <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high pt-3">
+                  <div class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">location_on</span><span>Ribera de la Laguna Pacucha</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span>+51 983 123 456</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">schedule</span><span>Mié - Dom 10:00 AM - 06:00 PM</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">groups</span><span>Aforo: 250 comensales</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-2">
+              <button onclick="setActiveSede('Pacucha Laguna', true)" class="w-full py-2.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary font-bold font-label-md text-label-md transition-colors">
+                Elegir como Mi Sede
+              </button>
+              <a href="https://maps.google.com/?q=Laguna+Pacucha,Andahuaylas" target="_blank" class="w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center block transition-colors">
+                Ver en Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Sede 3: Abancay Campestre -->
+          <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="relative h-52 overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY4nDOxGWZqdcg8SrEUn-fZVu4k4ZeqF-bi8mAoXnT2yVi6oqYVm-sOaZC85DMMpaeqhTAiVxG7RhuTIDPd82Uys5WS5hbpESn27WYmwxc5CUw10yoXwycBwOVk8o4wLbdlrTPhrx3dJbI931BibsOcLRI4ffkQLk_NZi4VtMHWNZT5zKctLX0G5zQy9yT631XSmedFa_S2RqEsXp6VeSJwqJBRfhdHpQOhc92FVOOPEBhvhlCa9Xlro3Qtl5GCKm1Ng" alt="Sede Abancay"/>
+                <div class="absolute top-4 left-4 bg-primary-fixed text-on-primary-fixed px-3 py-1 rounded-full font-label-sm text-label-sm font-bold shadow-md">Clima Cálido</div>
+              </div>
+              <div class="p-6 space-y-4">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Abancay Campestre</h3>
+                  <p class="font-label-sm text-label-sm text-secondary font-bold">Valle de Pachachaca Km 8</p>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Clima privilegiado, sol todo el año, piscina campestre y amplias áreas de descanso familiar junto al histórico río Pachachaca.</p>
+                <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high pt-3">
+                  <div class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">location_on</span><span>Carretera Pachachaca Km 8</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span>+51 983 789 012</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">schedule</span><span>Vie - Dom 10:00 AM - 06:00 PM</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">groups</span><span>Aforo: 300 comensales</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-2">
+              <button onclick="setActiveSede('Abancay Campestre', true)" class="w-full py-2.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary font-bold font-label-md text-label-md transition-colors">
+                Elegir como Mi Sede
+              </button>
+              <a href="https://maps.google.com/?q=Pachachaca,Abancay" target="_blank" class="w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center block transition-colors">
+                Ver en Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Sede 4: Chincheros -->
+          <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="relative h-52 overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD4l-azgA_Ebh8lVYIm5tWXz_zYxXpJFpWWauG6lfx0OIv6zl37DYPRffEuocJVILqYLfWmpgrW4d2tewVQnIWtvPf2Dxk0bPhPOIzGBbHgTrDoEagNklZ0RxfblehVQYMAq98jzPV6t-3jnSZ7LgMtyEx2ayAnJGHsgu4xkZs9UzOxZy8Uof9aHgLL1RxHiVx0GiMjnlMGBlvjAhfLJhvVD0MJKgiZzkKbYZVjSxBpMnDS4GXS4S2jwxr3KkGSjTqrIA" alt="Sede Chincheros"/>
+                <div class="absolute top-4 left-4 bg-surface-container-highest text-on-surface px-3 py-1 rounded-full font-label-sm text-label-sm font-bold shadow-md">Mirador Valle</div>
+              </div>
+              <div class="p-6 space-y-4">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Chincheros Mirador</h3>
+                  <p class="font-label-sm text-label-sm text-secondary font-bold">Mirador Campestre Chincheros</p>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">Con una vista panorámica inigualable a los valles interandinos. Punto de parada obligado para viajeros y amantes del buen comer.</p>
+                <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high pt-3">
+                  <div class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">location_on</span><span>Vía Panamericana Mirador</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span>+51 983 345 678</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">schedule</span><span>Jue - Dom 10:00 AM - 05:30 PM</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">groups</span><span>Aforo: 200 comensales</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-2">
+              <button onclick="setActiveSede('Chincheros', true)" class="w-full py-2.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary font-bold font-label-md text-label-md transition-colors">
+                Elegir como Mi Sede
+              </button>
+              <a href="https://maps.google.com/?q=Chincheros,Apurimac" target="_blank" class="w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center block transition-colors">
+                Ver en Google Maps
+              </a>
+            </div>
+          </div>
+
+          <!-- Sede 5: Ayacucho Valle (Conchopata) -->
+          <div class="bg-surface-container-lowest rounded-3xl overflow-hidden shadow-sm border border-surface-container-high flex flex-col justify-between hover:shadow-md transition-shadow">
+            <div>
+              <div class="relative h-52 overflow-hidden">
+                <img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WIvlcRCnqWFZGsGV-O0Te5soi8hZvRVyeHsThmLPpMKGCQR3CXd8KWSoROOkPWUAFvqaGYAaCYIhMPaYRJ84dqeXDWmOd6WAxloZzpLhJWeKHwGKnvXqqsFIFm7QHomt0b3yEp7-p5pnx9V-H7CXHKjUqIgKFmDCK7tA5ay_4AfraAAfTEx35WOBk90Y08rMlZEnCJBCNqQ7W0gHph48aS6y5boJS03wMAmnSXYgrkX3dIbhhl_BfGdRs" alt="Sede Ayacucho Conchopata"/>
+                <div class="absolute top-4 left-4 bg-primary-container text-on-primary px-3 py-1 rounded-full font-label-sm text-label-sm font-bold shadow-md">Zona Histórica</div>
+              </div>
+              <div class="p-6 space-y-4">
+                <div>
+                  <h3 class="font-headline-sm text-headline-sm text-on-surface">Ayacucho Valle (Conchopata)</h3>
+                  <p class="font-label-sm text-label-sm text-secondary font-bold">Barrio Gastronómico de Conchopata</p>
+                </div>
+                <p class="font-body-sm text-body-sm text-on-surface-variant">En el corazón gastronómico de Huamanga. Especialidad en cuy chactado al estilo tradicional huamanguino, puca picante y chancho al palo.</p>
+                <div class="space-y-2 font-body-sm text-body-sm text-on-surface-variant border-t border-surface-container-high pt-3">
+                  <div class="flex items-start gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">location_on</span><span>Barrio Conchopata / Salida Huanta</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">call</span><span>+51 983 901 234</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">schedule</span><span>Lun - Dom 10:00 AM - 07:00 PM</span></div>
+                  <div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary text-[18px] shrink-0">groups</span><span>Aforo: 280 comensales</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="p-6 pt-0 space-y-2">
+              <button onclick="setActiveSede('Ayacucho Valle', true)" class="w-full py-2.5 rounded-full bg-primary/10 hover:bg-primary/20 text-primary font-bold font-label-md text-label-md transition-colors">
+                Elegir como Mi Sede
+              </button>
+              <a href="https://maps.google.com/?q=Conchopata,Ayacucho" target="_blank" class="w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center block transition-colors">
+                Ver en Google Maps
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-surface-container-high text-on-surface-variant py-spacing-2xl px-gutter-mobile md:px-gutter-desktop border-t border-surface-container-highest">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-spacing-xl">
+      <div class="space-y-spacing-sm">
+        <div class="flex items-center gap-spacing-xs">
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold">M</div>
+          <span class="font-headline-sm text-headline-sm text-on-surface">SABORES ANDINOS</span>
+        </div>
+        <p class="font-body-sm text-body-sm">Recreo campestre tradicional de alta gastronomía andina. Especialistas en carnes al palo, pachamanca, truchas y celebraciones familiares en Apurímac y Ayacucho.</p>
+      </div>
+      <div class="space-y-spacing-xs">
+        <h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider font-bold">Enlaces de Interés</h4>
+        <div class="flex flex-col space-y-spacing-2xs font-body-sm text-body-sm">
+          <a class="hover:text-on-surface" href="index.html">Inicio</a>
+          <a class="hover:text-on-surface" href="carta.html">Nuestra Carta Digital</a>
+          <a class="hover:text-on-surface" href="experiencia.html">Experiencia Recreo</a>
+          <a class="hover:text-on-surface" href="eventos.html">Eventos &amp; Encargos</a>
+          <a class="hover:text-on-surface" href="sedes.html">Nuestras Sedes</a>
+        </div>
+      </div>
+      <div class="space-y-spacing-xs">
+        <h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider font-bold">Atención &amp; Redes</h4>
+        <p class="font-body-sm text-body-sm">Atención de Fogón: Lunes a Domingo de 09:30 AM a 06:30 PM.<br/>Central de Reservas WhatsApp: +51 983 456 789</p>
+      </div>
+      <div class="space-y-spacing-xs">
+        <h4 class="font-label-lg text-label-lg text-on-surface uppercase tracking-wider font-bold">Garantía Sabores Andinos</h4>
+        <p class="font-body-sm text-body-sm">Certificación Sanitaria DIGESA 2024.<br/>Carne tierna seleccionada con balanza digital certificada.</p>
+      </div>
+    </div>
+    <div class="max-w-container-max mx-auto mt-spacing-xl pt-spacing-md border-t border-outline-variant/30 text-center font-label-sm text-label-sm">
+      © 2024 Recreo Campestre Sabores Andinos de Mistura S.A.C. Todos los derechos reservados.
+    </div>
+  </footer>
+
+  
+<!-- ================= UNIVERSAL MODALS & DRAWER ================= -->
+
+<!-- 1. Modal de Reserva de Mesa -->
+<div id="reservation-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto">
+  <div class="relative w-full max-w-lg bg-surface rounded-3xl shadow-2xl border border-surface-container-high overflow-hidden my-8 animate-in fade-in zoom-in-95 duration-200">
+    <!-- Header Modal -->
+    <div class="bg-primary-container text-on-primary p-6 relative">
+      <button onclick="closeReservationModal()" type="button" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors text-white">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+      <div class="inline-flex items-center gap-2 bg-white/15 px-3 py-1 rounded-full font-label-sm text-label-sm mb-2">
+        <span class="material-symbols-outlined text-[15px]">event_seat</span> Reserva Sin Costo Adicional
+      </div>
+      <h3 class="font-headline-md text-headline-md leading-tight text-white">Reserva tu Mesa Campestre</h3>
+      <p class="font-body-sm text-body-sm text-white/90 mt-1">Asegura tu lugar junto al fogón y disfruta de la comida tradicional sin esperas.</p>
+    </div>
+
+    <!-- Form Modal -->
+    <form onsubmit="submitReservationForm(event)" class="p-6 space-y-4">
+      <div>
+        <label class="block font-label-md text-label-md text-on-surface-variant mb-1 font-bold">Elige la Sede</label>
+        <div class="relative">
+          <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-primary text-[20px]">location_on</span>
+          <select id="res-sede-select" class="w-full pl-10 pr-4 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary">
+            <option value="Andahuaylas Matriz">Andahuaylas Matriz (Mollepata)</option>
+            <option value="Pacucha Laguna">Pacucha Laguna (Vista al Lago)</option>
+            <option value="Abancay Campestre">Abancay Campestre (Pachachaca)</option>
+            <option value="Chincheros">Chincheros Mirador</option>
+            <option value="Ayacucho Valle">Ayacucho Valle (Conchopata)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block font-label-md text-label-md text-on-surface-variant mb-1">Nombre Completo</label>
+          <input id="res-name" type="text" required placeholder="Ej. Juan Pérez" class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary"/>
+        </div>
+        <div>
+          <label class="block font-label-md text-label-md text-on-surface-variant mb-1">WhatsApp / Celular</label>
+          <input id="res-phone" type="tel" required placeholder="Ej. 983 123 456" class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary"/>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block font-label-md text-label-md text-on-surface-variant mb-1">Fecha</label>
+          <input id="res-date" type="date" required class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary"/>
+        </div>
+        <div>
+          <label class="block font-label-md text-label-md text-on-surface-variant mb-1">Hora Estimada</label>
+          <select id="res-time" class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary">
+            <option value="11:30 AM">11:30 AM (Primer fogón)</option>
+            <option value="12:30 PM">12:30 PM (Almuerzo familiar)</option>
+            <option value="01:30 PM" selected>01:30 PM (Hora pico tradicional)</option>
+            <option value="02:30 PM">02:30 PM (Segundo turno)</option>
+            <option value="03:30 PM">03:30 PM (Tarde campestre)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block font-label-md text-label-md text-on-surface-variant mb-1">N° de Personas</label>
+          <select id="res-guests" class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary">
+            <option value="2 personas">2 personas (Mesa íntima)</option>
+            <option value="4 personas" selected>4 personas (Familiar)</option>
+            <option value="6 a 8 personas">6 a 8 personas (Mesa grande)</option>
+            <option value="10 a 15 personas">10 a 15 personas (Cabaña campestre)</option>
+            <option value="Más de 15 personas">Más de 15 personas (Grupo grande)</option>
+          </select>
+        </div>
+        <div>
+          <label class="block font-label-md text-label-md text-on-surface-variant mb-1">Zona Preferida</label>
+          <select id="res-zone" class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary">
+            <option value="Cerca al Fogón Principal">Cerca al Fogón Principal</option>
+            <option value="Jardines y Áreas Verdes">Jardines y Áreas Verdes</option>
+            <option value="Cabaña Familiar Privada">Cabaña Familiar Privada</option>
+            <option value="Zona Juegos Infantiles">Cerca a Juegos Infantiles</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <label class="block font-label-md text-label-md text-on-surface-variant mb-1">Notas especiales o Celebración</label>
+        <input id="res-notes" type="text" placeholder="Ej. Cumpleaños de mi papá, requerimos sillita de bebé" class="w-full px-3.5 py-2.5 rounded-xl border border-outline-variant bg-surface-container-low text-on-surface font-body-sm focus:outline-none focus:border-primary"/>
+      </div>
+
+      <div class="pt-2">
+        <button type="submit" class="w-full py-3.5 px-6 rounded-full bg-primary hover:bg-primary/90 text-on-primary font-bold font-label-lg text-label-lg shadow-lg flex items-center justify-center gap-2 transition-transform active:scale-[0.98]">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          Confirmar Reserva vía WhatsApp
+        </button>
+        <p class="text-center font-label-sm text-label-sm text-on-surface-variant mt-2">Te responderemos inmediatamente con tu código de mesa y ubicación exacta.</p>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 2. Modal de Perfil & Club Mistura -->
+<div id="profile-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/60 backdrop-blur-sm p-4 overflow-y-auto">
+  <div class="relative w-full max-w-md bg-surface rounded-3xl shadow-2xl border border-surface-container-high overflow-hidden my-8 animate-in fade-in zoom-in-95 duration-200">
+    <div class="bg-gradient-to-br from-primary to-primary-container text-on-primary p-6 relative">
+      <button onclick="closeProfileModal()" type="button" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors text-white">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+      <div class="flex items-center gap-4">
+        <img alt="Perfil" class="w-16 h-16 rounded-full object-cover border-2 border-secondary-container shadow-md" src="https://lh3.googleusercontent.com/aida/AEtjO1V2ofqFlDHm4Hhos4vwiBVqOjkeuRF1UwANTzhgZMcEB4evY_NvPSJtYImBNOJBh2363oDlxV8x_jTarE7HOyIYUIXfgoU14X0qPwr1JQce3Sk1oithwr7n8uDk9bJzRUIkZ5nnn8LCkYO2zB4QcuVfcOaC-70XNWCnQEyWsIPiAnf13UE9Dfa5i5qi04uNdNcZfwLNJUuSpahoSYGAd7sq4O4QSyyOCyFBkTaWCK_jcaYlPM3_H9ZcxItDDQjWoyrAOMFXuRRqdg"/>
+        <div>
+          <span class="bg-secondary-container text-on-secondary-container px-2.5 py-0.5 rounded-full font-label-sm text-label-sm font-bold uppercase tracking-wider">Socio Mistura</span>
+          <h3 class="font-headline-sm text-headline-sm text-white mt-1">Familia Comensal</h3>
+          <p class="font-label-sm text-label-sm text-white/80">Cliente Frecuente · Nivel Brasas</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-6 space-y-4">
+      <!-- Puntos Card -->
+      <div class="bg-surface-container p-4 rounded-2xl flex items-center justify-between border border-surface-container-high">
+        <div>
+          <span class="font-label-sm text-label-sm text-on-surface-variant block">Tus Puntos Fogón</span>
+          <span class="font-headline-md text-headline-md text-primary font-bold">280 Pts</span>
+        </div>
+        <div class="text-right">
+          <span class="font-label-sm text-label-sm text-secondary block font-bold">Equivalente: S/ 28.00</span>
+          <span class="text-[11px] text-on-surface-variant">Canjeable en tu próxima mesa</span>
+        </div>
+      </div>
+
+      <!-- Beneficios -->
+      <div class="space-y-2">
+        <h4 class="font-label-md text-label-md font-bold text-on-surface uppercase tracking-wider">Beneficios Activos</h4>
+        <div class="space-y-2 font-body-sm text-body-sm">
+          <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low">
+            <span class="material-symbols-outlined text-primary text-[20px]">cake</span>
+            <span>Jarra de Chicha de Jora de regalo en tu cumpleaños</span>
+          </div>
+          <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low">
+            <span class="material-symbols-outlined text-primary text-[20px]">local_shipping</span>
+            <span>Delivery con prioridad y empaque biodegradables</span>
+          </div>
+          <div class="flex items-center gap-3 p-2.5 rounded-xl bg-surface-container-low">
+            <span class="material-symbols-outlined text-primary text-[20px]">table_bar</span>
+            <span>Acceso prioritario a cabañas campestres los domingos</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pt-2 flex flex-col gap-2">
+        <a href="https://api.whatsapp.com/send?phone=51983456789&text=Hola%20Sabores%20Andinos%2C%20quisiera%20consultar%20mis%20beneficios%20y%20puntos%20de%20socio" target="_blank" class="w-full py-3 rounded-full bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-bold font-label-md text-label-md text-center transition-colors">
+          Consultar Canjes por WhatsApp
+        </a>
+        <button onclick="closeProfileModal()" type="button" class="w-full py-2.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md text-center transition-colors">
+          Cerrar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 3. Drawer Móvil Desplegable -->
+<div id="mobile-drawer" class="fixed inset-0 z-[90] hidden bg-black/60 backdrop-blur-sm transition-opacity">
+  <div class="fixed top-0 right-0 w-4/5 max-w-sm h-full bg-surface shadow-2xl p-6 flex flex-col justify-between overflow-y-auto">
+    <div class="space-y-6">
+      <div class="flex items-center justify-between pb-4 border-b border-surface-container-high">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-primary-container flex items-center justify-center text-on-primary font-bold">M</div>
+          <span class="font-headline-sm text-headline-sm text-primary">SABORES ANDINOS</span>
+        </div>
+        <button onclick="toggleMobileMenu()" type="button" class="p-2 text-on-surface hover:text-primary">
+          <span class="material-symbols-outlined text-[24px]">close</span>
+        </button>
+      </div>
+
+      <!-- Selector de Sede Móvil -->
+      <div class="bg-surface-container p-3 rounded-2xl">
+        <span class="font-label-sm text-label-sm text-on-surface-variant block mb-1 font-bold">Sede Activa:</span>
+        <select class="navbar-sede-select w-full bg-surface py-2 px-3 rounded-xl border border-outline-variant font-label-sm text-label-sm text-on-surface font-bold">
+          <option value="Andahuaylas Matriz">Andahuaylas Matriz</option>
+          <option value="Pacucha Laguna">Pacucha Laguna</option>
+          <option value="Abancay Campestre">Abancay Campestre</option>
+          <option value="Chincheros">Chincheros</option>
+          <option value="Ayacucho Valle">Ayacucho Valle</option>
+        </select>
+      </div>
+
+      <!-- Links de Navegación -->
+      <nav class="flex flex-col space-y-2 font-label-lg text-label-lg">
+        <a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-primary">home</span> Inicio
+        </a>
+        <a href="carta.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-primary">restaurant_menu</span> Nuestra Carta Digital
+        </a>
+        <a href="experiencia.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-primary">nature_people</span> Experiencia Recreo & Eventos
+        </a>
+        <a href="eventos.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-primary">calculate</span> Pedidos & Encargos (Cotizador)
+        </a>
+        <a href="sedes.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-surface-container transition-colors">
+          <span class="material-symbols-outlined text-primary">location_on</span> Nuestras Sedes
+        </a>
+        <button onclick="toggleMobileMenu(); openProfileModal();" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-surface-container transition-colors text-left w-full">
+          <span class="material-symbols-outlined text-primary">card_membership</span> Mi Perfil & Puntos Mistura
+        </button>
+      </nav>
+    </div>
+
+    <!-- Botones Accionables en Drawer -->
+    <div class="pt-6 border-t border-surface-container-high space-y-3">
+      <button onclick="toggleMobileMenu(); openReservationModal();" class="w-full py-3 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-bold font-label-md text-label-md flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">event_seat</span> Reservar Mesa
+      </button>
+      <a href="carta.html?mode=delivery" class="w-full py-3 rounded-full bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container font-bold font-label-md text-label-md flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">moped</span> Pedir Delivery
+      </a>
+    </div>
+  </div>
+</div>
+
+  <script src="nav-system.js"></script>
+</body>
+</html>
